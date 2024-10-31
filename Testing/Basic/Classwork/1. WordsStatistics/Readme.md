@@ -11,14 +11,14 @@
 
 ## Коды
 
-E - Null, Empty, Whitespaces
-CR - Whitespaces
-C - Case
-O - Order
-L - Length
-123 - Hash
-998 - Add Different Performance
-999 - Add Same Performance
-QWE - All chars lower case
-STA - Static
-EN - To cache or not to cache
+- E - Null, Empty, Whitespaces
+- CR - Whitespaces
+- C - Case
+- O - Order
+- L - Length
+- 123 - Hash
+- 998 - Add Different Performance
+- 999 - Add Same Performance
+- QWE - All chars lower case
+- STA - Static
+- EN - To cache or not to cache
