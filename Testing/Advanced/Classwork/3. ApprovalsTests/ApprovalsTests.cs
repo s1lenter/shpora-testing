@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using NUnit.Framework;
 
-namespace Advanced.Classwork.Approvals;
+namespace Advanced.Classwork.ApprovalsTests;
 
 [TestFixture]
 [Explicit]

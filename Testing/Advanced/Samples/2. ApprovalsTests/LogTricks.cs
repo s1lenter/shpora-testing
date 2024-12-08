@@ -6,7 +6,7 @@ using log4net.Appender;
 using log4net.Config;
 using NUnit.Framework;
 
-namespace Advanced.Samples.ApprovalsSample;
+namespace Advanced.Samples.ApprovalsTests;
 
 [TestFixture]
 [Explicit]

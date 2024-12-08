@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Advanced.Classwork.Approvals;
+namespace Advanced.Classwork.ApprovalsTests;
 
 public class Puzzle15
 {

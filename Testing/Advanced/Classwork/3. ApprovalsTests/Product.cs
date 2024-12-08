@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Advanced.Classwork.Approvals;
+namespace Advanced.Classwork.ApprovalsTests;
 
 public class Product
 {

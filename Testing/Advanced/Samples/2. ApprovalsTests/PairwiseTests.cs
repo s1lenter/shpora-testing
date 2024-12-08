@@ -3,7 +3,7 @@ using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
 using NUnit.Framework;
 
-namespace Advanced.Samples.ApprovalsSample;
+namespace Advanced.Samples.ApprovalsTests;
 
 [TestFixture]
 [Explicit]
