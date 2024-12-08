@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  build-and-tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -19,5 +19,5 @@ jobs:
       run: dotnet restore ./Testing/Testing.sln
     - name: Build
       run: dotnet build --no-restore ./Testing/Testing.sln
-    - name: Test
+    - name: Unit Test
       run: dotnet test --no-build --verbosity normal ./Testing/Testing.sln
