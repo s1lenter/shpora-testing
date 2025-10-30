@@ -11,13 +11,13 @@ public class ObjectComparison
     public void CheckCurrentTsar()
     {
         var actualTsar = TsarRegistry.GetCurrentTsar();
-
+        
         var expectedTsar = new Person("Ivan IV The Terrible", 54, 170, 70,
             new Person("Vasili III of Russia", 28, 170, 60, null));
 
-        actualTsar.Should().BeEquivalentTo(expectedTsar, 
-            options => options.Excluding(x => x.Id) 
-                .Excluding(x => x.Parent.Id));
+        actualTsar.Should().BeEquivalentTo(expectedTsar, options => options
+            .Excluding(x => x.DeclaringType == typeof(Person) && x.Name == nameof(Person.Id))
+            .IgnoringCyclicReferences());
     }
 
     [Test]
@@ -39,6 +39,7 @@ public class ObjectComparison
         // новые придется вводить в ручную,
         // в моем решении проверяются все поля за исключением поля Id, что не мешает расширяемости.
         // И мое решение короче, в одну строку, и понятно что делается по названию методов
+        // Такой подход не работает правильно с циклическими ссылками и не отображает сообщения об ошибке, непонятно что именно не так
     }
 
     private bool AreEqual(Person? actual, Person? expected)
